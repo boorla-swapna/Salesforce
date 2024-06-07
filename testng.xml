@@ -4,7 +4,7 @@
   <test name="Test" >
     <classes>
       <class name="tests.SFDCLogin"/>
-		  <class name="tests.selectUsernameForUsernameDropdown"/>
+		  <class name="tests.selectUsermenuForUsernameDropdown"/>
 		  <class name="tests.CreateAccount"/>
 		  <class name="tests.CreateOpportunity"/>
 		  <class name="tests.Leads"/>

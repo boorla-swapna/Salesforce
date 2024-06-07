@@ -1,6 +1,0 @@
-2024-06-06-21:41:13 INFO  Setting the Driver  for test:  ValidateLoginErrorMessage_TC4B Success
-2024-06-06-21:41:25 INFO  Verifying ApplicationPage is Displayed
-2024-06-06-21:41:26 INFO  PASS: ApplicationPage is Displayed
-2024-06-06-21:41:29 INFO  PASS: Wrong Username Entered into Username field as Expected
-2024-06-06-21:41:31 INFO  PASS: Wrong password Entered into password field as Expected
-2024-06-06-21:41:34 INFO  Clicked on loginButton
