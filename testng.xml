@@ -7,7 +7,7 @@
 		  <class name="tests.selectUsermenuForUsernameDropdown"/>
 		  <class name="tests.CreateAccount"/>
 		  <class name="tests.CreateOpportunity"/>
-		  <class name="tests.Leads"/>
+		  <class name="tests.LeadsTab"/>
 		  <class name="tests.Contacts"/>
 		  
     </classes>
