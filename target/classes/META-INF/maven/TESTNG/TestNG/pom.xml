@@ -32,11 +32,11 @@
     <version>5.2.5</version>
 </dependency>
 <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
-<dependency>
+<!--<dependency>
     <groupId>org.apache.logging.log4j</groupId>
     <artifactId>log4j-core</artifactId>
     <version>3.0.0-beta2</version>
-</dependency>
+</dependency>-->
 
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
@@ -84,6 +84,17 @@
     <version>1.4.1</version>
     <type>pom</type>
     </dependency>
+    
+    <dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>1.7.32</version> <!-- Use the latest version -->
+</dependency>
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-simple</artifactId>
+    <version>1.7.32</version> <!-- Use the latest version -->
+</dependency>
   </dependencies>
   
   
