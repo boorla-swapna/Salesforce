@@ -48,7 +48,7 @@ public class CreateAccount extends BaseTest{
 	   logger.info("Closing Resources...");
        DataUtils.fileinputstream.close();
     }
-	@Test
+	@Test(priority=1)
 	public void verifyCreateAccount_TC10() throws IOException {
 		test=BaseTest.threadExtentTest.get();
 		WebDriver driver=BaseTest.getDriver();
@@ -75,7 +75,7 @@ public class CreateAccount extends BaseTest{
 	
 	
 	
-	@Test
+	@Test(priority=2)
 	public void verifyCreateNewView_TC11() throws IOException {
 		test=BaseTest.threadExtentTest.get();
 		WebDriver driver=BaseTest.getDriver();
@@ -105,7 +105,7 @@ public class CreateAccount extends BaseTest{
 		}
 	}
 	
-	@Test
+	@Test(priority=3)
 	public void verifyEditView_TC12() throws IOException {
 		test=BaseTest.threadExtentTest.get();
 		WebDriver driver=BaseTest.getDriver();
@@ -146,7 +146,7 @@ public class CreateAccount extends BaseTest{
 		}
 	}
 	
-	@Test
+	@Test(priority=4)
 	public void verifyMergeAccounts_TC13() throws IOException {
 		test=BaseTest.threadExtentTest.get();
 		WebDriver driver=BaseTest.getDriver();
@@ -185,7 +185,7 @@ public class CreateAccount extends BaseTest{
 			System.out.println(e.getMessage());
 		}
 	}
-	@Test
+	@Test(priority=5)
 	public void verifyCreateAccountReport_TC14() throws IOException {
 		test=BaseTest.threadExtentTest.get();
 		WebDriver driver=BaseTest.getDriver();

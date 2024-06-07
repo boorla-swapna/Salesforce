@@ -51,7 +51,7 @@ public class CreateOpportunity extends BaseTest {
        DataUtils.fileinputstream.close();
     }
 	
-	@Test
+	@Test(priority=1)
 	public void verfiyOpportunitiesDropDown_TC15() throws IOException {
 		test=BaseTest.threadExtentTest.get();
 		WebDriver driver=BaseTest.getDriver();
@@ -75,7 +75,7 @@ public class CreateOpportunity extends BaseTest {
 	    test.log(Status.PASS,"Opportunities DropDown with <All Oppotunities>,<Closing Next Month>,<Closing This Month>,<My Opportunities>,<New This Week>,<Recently Viewed Opportunities>,<Won> should be available");
 	}
 	
-	@Test
+	@Test(priority=2)
 	public void verifyCreateNewOpportunity_TC16() throws IOException {
 		test=BaseTest.threadExtentTest.get();
 		WebDriver driver=BaseTest.getDriver();
@@ -84,6 +84,7 @@ public class CreateOpportunity extends BaseTest {
 		ump=new selectUsermenuForUsernameDropdownPage(driver);
 		cop=new CreateOppotunityPage(driver);
 		driver.get(DataUtils.readLoginTestData("app.url"));
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(WaitConstants.IMPLICIT_WAIT_DURATION);
 		lp.verifyApplicationPageIsDisplayed(driver);
 		test.log(Status.PASS,"SFDC Appication login page is opened");
@@ -104,7 +105,7 @@ public class CreateOpportunity extends BaseTest {
 	    cop.verifyNewOpportunityDetails(driver);    
 	}
 	
-	@Test
+	@Test(priority=3)
 	public void verifyTestOpportunityPipelineReport_TC17() throws IOException {
 		test=BaseTest.threadExtentTest.get();
 		WebDriver driver=BaseTest.getDriver();
@@ -113,6 +114,7 @@ public class CreateOpportunity extends BaseTest {
 		ump=new selectUsermenuForUsernameDropdownPage(driver);
 		cop=new CreateOppotunityPage(driver);
 		driver.get(DataUtils.readLoginTestData("app.url"));
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(WaitConstants.IMPLICIT_WAIT_DURATION);
 		lp.verifyApplicationPageIsDisplayed(driver);
 		test.log(Status.PASS,"SFDC Appication login page is opened");
@@ -129,7 +131,7 @@ public class CreateOpportunity extends BaseTest {
         cop.verifyPipeLineDetails(driver);	
 	}
 	
-	@Test
+	@Test(priority=4)
     public void verifyStuckOpportunityReport_TC18() throws IOException {
 		test=BaseTest.threadExtentTest.get();
 		WebDriver driver=BaseTest.getDriver();
@@ -138,6 +140,7 @@ public class CreateOpportunity extends BaseTest {
 		ump=new selectUsermenuForUsernameDropdownPage(driver);
 		cop=new CreateOppotunityPage(driver);
 		driver.get(DataUtils.readLoginTestData("app.url"));
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(WaitConstants.IMPLICIT_WAIT_DURATION);
 		lp.verifyApplicationPageIsDisplayed(driver);
 		test.log(Status.PASS,"SFDC Appication login page is opened");
@@ -154,7 +157,7 @@ public class CreateOpportunity extends BaseTest {
     cop.verifyStuckOpportunitiesDetails(driver);
 	}
     
-	@Test
+	@Test(priority=5)
     public void verifyTestQuarterlySummaryReport_TC19() throws IOException {
 		test=BaseTest.threadExtentTest.get();
 		WebDriver driver=BaseTest.getDriver();
@@ -163,6 +166,7 @@ public class CreateOpportunity extends BaseTest {
 		ump=new selectUsermenuForUsernameDropdownPage(driver);
 		cop=new CreateOppotunityPage(driver);
 		driver.get(DataUtils.readLoginTestData("app.url"));
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(WaitConstants.IMPLICIT_WAIT_DURATION);
 		lp.verifyApplicationPageIsDisplayed(driver);
 		test.log(Status.PASS,"SFDC Appication login page is opened");

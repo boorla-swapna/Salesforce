@@ -45,11 +45,12 @@ public class selectUsermenuForUsernameDropdown extends BaseTest{
        DataUtils.fileinputstream.close();
     }
 	
-	@Test
+	@Test(priority=1)
 	public void verifyUserMenuDropDown_TC05() throws IOException {
 		test=BaseTest.threadExtentTest.get();
 		WebDriver driver=BaseTest.getDriver();
 		LoginPage lp=new LoginPage(driver);
+		driver.manage().window().maximize();
 		selectUsermenuForUsernameDropdownPage ump=new selectUsermenuForUsernameDropdownPage(driver);
 		driver.get(DataUtils.readLoginTestData("app.url"));
 		driver.manage().timeouts().implicitlyWait(WaitConstants.IMPLICIT_WAIT_DURATION);
@@ -65,11 +66,12 @@ public class selectUsermenuForUsernameDropdown extends BaseTest{
 	    test.log(Status.PASS,"verifyUserMenuDropDown_TC05  test case");
 	}
 	
-	@Test
+	@Test(priority=2)
 	public void verifyMyProfileOptionFromUsermenu_TC06() throws IOException {
 		test=BaseTest.threadExtentTest.get();
 		WebDriver driver=BaseTest.getDriver();
 		LoginPage lp=new LoginPage(driver);
+		driver.manage().window().maximize();
 		selectUsermenuForUsernameDropdownPage ump=new selectUsermenuForUsernameDropdownPage(driver);
 		driver.get(DataUtils.readLoginTestData("app.url"));
 		driver.manage().timeouts().implicitlyWait(WaitConstants.IMPLICIT_WAIT_DURATION);
@@ -95,11 +97,12 @@ public class selectUsermenuForUsernameDropdown extends BaseTest{
 		
 	}
 	
-	@Test
+	@Test(priority=3)
 	public void verifyMySettingsUsermenuOptions_TC07() throws IOException {
 		test=BaseTest.threadExtentTest.get();
 		WebDriver driver=BaseTest.getDriver();
 		LoginPage lp=new LoginPage(driver);
+		driver.manage().window().maximize();
 		selectUsermenuForUsernameDropdownPage ump=new selectUsermenuForUsernameDropdownPage(driver);
 		driver.get(DataUtils.readLoginTestData("app.url"));
 		driver.manage().timeouts().implicitlyWait(WaitConstants.IMPLICIT_WAIT_DURATION);
@@ -130,10 +133,11 @@ public class selectUsermenuForUsernameDropdown extends BaseTest{
 		test.log(Status.PASS,"verifyMySettingsUsermenuOptions_TC07 testcase passed");
 	}
 	
-	@Test
+	@Test(priority=4)
 	public void verifyDeveloperConsoleOptionFromUserMenu_TC08() throws IOException {
 		test=BaseTest.threadExtentTest.get();
 		WebDriver driver=BaseTest.getDriver();
+		driver.manage().window().maximize();
 		LoginPage lp=new LoginPage(driver);
 		selectUsermenuForUsernameDropdownPage ump=new selectUsermenuForUsernameDropdownPage(driver);
 		driver.get(DataUtils.readLoginTestData("app.url"));
@@ -155,10 +159,11 @@ public class selectUsermenuForUsernameDropdown extends BaseTest{
 	    test.log(Status.PASS,"verifyDeveloperConsoleOptionFromUserMenu_TC08 testcase passed");
 	}
 	
-	@Test
+	@Test(priority=5)
 	public void verifyLogoutOptionFromUsermenu_TC09() throws IOException {
 		test=BaseTest.threadExtentTest.get();
 		WebDriver driver=BaseTest.getDriver();
+		driver.manage().window().maximize();
 		LoginPage lp=new LoginPage(driver);
 		selectUsermenuForUsernameDropdownPage ump=new selectUsermenuForUsernameDropdownPage(driver);
 		driver.get(DataUtils.readLoginTestData("app.url"));
