@@ -1,0 +1,45 @@
+{
+  "headers":{
+         "Content-Type":"application/json"
+  },
+  "payloads":{
+     "login":{
+         "username":"swapna.boddula.09@tekarch.com",
+         "password":"Admin123"
+         },
+   "addUser":{
+           "accountno":"TA-1000880",
+           "departmentno":"11",
+            "salary":"1001",
+           "pincode": "100990",
+           "userid": "pHFLMstXPugubAmpW8wL",
+           "id": "kSBXqQyj16sPAKVfYtPX"  
+        },
+    "updateUser":{
+            "accountno": "TA-1000880",
+            "departmentno": "2",
+            "salary": "1001",
+            "pincode": "1000",
+            "userid": "pHFLMstXPugubAmpW8wL",
+            "id": "kSBXqQyj16sPAKVfYtPX" 
+       },
+        "deleteUser":{
+             "accountno": "TA-1000880",
+            "departmentno": "2",
+            "salary": "1001",
+            "pincode": "1000",
+            "userid": "pHFLMstXPugubAmpW8wL",
+            "id": "kSBXqQyj16sPAKVfYtPX" 
+       }
+       },
+        "endpoints":{
+              "login":"/login",
+              "adddata":"/addData",
+              "getdata":"/getdata",
+              "delete":"/delete",
+              "logout":"/logout"
+              }
+    } 
+    
+         
+         
